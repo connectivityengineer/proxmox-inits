@@ -1,0 +1,9 @@
+Have you ever wanted a nice, easy way to create new VMs to play with using your favorite base distro, without doing a lot of work to configure basic settings like your account, networking, hostname, etc?
+
+Cloud-Init can do all of that and more, but it’s designed more for big cloud providers and not the easiest thing to setup. But, what if we could take a generic cloud image, and use it with Proxmox’s built-in Cloud-Init automation, to provision easy bare VMs without having to build our own templates? That’s what I’ve done, and I’ve written a script to automate downloading these templates on new Proxmox systems from the major distros which provide them (Debian, Ubuntu, Fedora).
+
+Of course, once cloud-init is installed and configured, there’s no reason we can’t clone a template, install software on it, and then clone the clone to have a newly-configured VM with more software installed. From here, you can build out your library of useful application templates for whatever you do regularly.
+
+Courtesy of https://www.apalrd.net/posts/2023/pve_cloud/
+
+https://youtu.be/E7rv08ttv8k  to learn more
